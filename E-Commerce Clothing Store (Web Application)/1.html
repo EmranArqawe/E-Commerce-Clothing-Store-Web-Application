@@ -1,0 +1,295 @@
+<html>
+<head>
+<title>MARKET</title>
+<style type="text/css">
+body{background-color:444444;color:white;}
+:focus{background-color:black;color:red}
+</style>
+
+<script type="text/javascript">
+function sum1(){
+var no,sum;
+no=document.getElementById("x1").value;
+no=no-0;
+sum=no*10;
+document.getElementById("y1").innerHTML=sum+" $";
+}
+
+
+function sum2(){
+var no,sum;
+no=document.getElementById("x2").value;
+no=no-0;
+sum=no*7;
+document.getElementById("y2").innerHTML=sum+" $";
+}
+
+function sum3(){
+var no,sum;
+no=document.getElementById("x3").value;
+no=no-0;
+sum=no*13;
+document.getElementById("y3").innerHTML=sum+" $";
+}
+
+
+
+function sum4(){
+var no,sum;
+no=document.getElementById("x4").value;
+no=no-0;
+sum=((no*12)*0.05);
+sum=(no*12)-sum;
+document.getElementById("y4").innerHTML=sum+" $";
+}
+
+
+function sum5(){
+var no,sum;
+no=document.getElementById("x5").value;
+no=no-0;
+sum=no*4;
+for(;no>=3;no--)
+{
+if(no%3==0)
+sum=sum-4;
+}
+document.getElementById("y5").innerHTML=sum+" $";
+}
+
+
+
+
+function sum6(){
+var no,sum;
+no=document.getElementById("x6").value;
+no=no-0;
+sum=((no*6)*0.03);
+sum=((no*6)+sum);
+document.getElementById("y6").innerHTML=sum+" $";
+}
+
+</script>
+
+
+<h1><script type="text/javascript">
+time=new Date();
+h=time.getHours();
+m=time.getMinutes();
+s=time.getSeconds()
+document.write("Login Time &nbsp;"+h+":"+m+":"+s+" ");
+
+time=new Date();
+h=time.getHours();
+if(h>=0 && h<=12)
+document.write("&nbsp; Morning Time");
+else if(h>12 && h<17)
+document.write("&nbsp; Ofter Noon");
+else if(h>17 && h<24)
+document.write("&nbsp; Evening Time");
+</script></h1>
+
+
+<table border="0">
+
+<tr>
+<th><img src="beige-baseball-jacket.JPG" height="230pt" width="65%"/></th>
+</tr>
+
+
+<tr>
+<th><h2>Los Angeles Men's Baseball Jacket<br/> - White and Beige Color Block with <br/>Los Angeles Graphics<br/>, Button Front, Loose Fit,<br/> Men's All Season Casual<br/> Sportswear, Sports Jacket,<br/> Durable Canvas Jacket</h2></th>
+</tr>
+
+<tr>
+<th><h1>Price Per Piece = 10$</h1></th>
+</tr>
+
+
+<tr>
+<th>
+<form method="get" action="market.exe">
+<label><h1>the Required quantity : </h1><input type="text" name="quantity" id="x1" maxlength="6" placeholder="Inter the Required quantity " size="20" style="font-size:20pt"/></label>
+</form>
+</th>
+</tr>
+
+<tr>
+<th>
+<button onclick="sum1()"><h1>Total Price </h1></button>
+<h2><p id="y1"></p></h2>
+</th>
+</tr>
+
+</table>
+
+<table border="0" style="position:absolute;top:60px;right:0px">
+
+<tr>
+<th><img src="tshirts-pack.JPG" height="230pt" width="50%"/></th>
+</tr>
+
+<tr>
+<th><h2>4 Pack Men's Classic Short<br/> Sleeve T-Shirts - Stretchy <br/>SportsTees with Geometric,<br/> Star, and Dream Maker <br/>Designs, Breathable Polyester<br/> Blend,Crew Neck, Machine Washable</h2></th>
+</tr>
+<tr>
+<th><h1>Old Price : <del>15</del>$<br/> New Price : 7$</h1></th>
+</tr>
+
+
+<tr>
+<th>
+<form method="get" action="market.exe">
+<label><h1>the Required quantity : </h1><input type="text" name="quantity" id="x2" maxlength="6" placeholder="Inter the Required quantity " size="20" style="font-size:20pt"/></label>
+</form>
+</th>
+</tr>
+<tr>
+<th>
+<button onclick="sum2()"><h1>Total Price </h1></button>
+<h2><p id="y2"></p></h2>
+</th>
+</tr>
+
+</table>
+
+
+
+<table border="0" style="position:absolute;top:60px;right:470px">
+
+
+<tr>
+<th><img src="dark-jeans-jacket.JPG" height="240pt" width="50%"/></th>
+</tr>
+
+
+
+
+<tr>
+<th><h2>Men's Classic Faux Denim Jacket<br/>- Classic Button Closure, Suitable<br/> for All Seasons,<br/> Casual and Formal Wear<br/> - Retro Street Outerwear, Durable Fabric<br/>, Washed Texture,<br/> Strong Design</h2></th></tr>
+<tr><th><h1>Price Per Piece = 13$</h1></th>
+</tr>
+
+
+
+<tr>
+<th>
+<form method="get" action="market.exe">
+<label><h1>the Required quantity : </h1><input type="text" name="quantity" id="x3" maxlength="6" placeholder="Inter the Required quantity " size="20" style="font-size:20pt"/></label>
+</form>
+</th>
+</tr>
+<tr>
+<th>
+<button onclick="sum3()"><h1>Total Price </h1></button>
+<h2><p id="y3"></p></h2>
+</th>
+</tr>
+
+</table>
+
+
+
+<table border="0" style="position:absolute;top:850px;left:0px">
+
+
+<tr>
+<th><img src="black-hoodie.JPG" height="220pt" width="65%"/></th>
+</tr>
+
+
+<tr>
+<th><h2>Men's Blue Hoodie <br/>with Angel Wings - <br/>Loose Fit, Long Sleeve,<br/> Casual Style for Autumn<br/> and Winter, All Season<br/> Comfortable Clothing,<br/> Hoodie</h2></th></tr>
+<tr><th><h1>Price Per Piece = 12$<br/> And it has a 5% discount</h1></th></tr>
+
+
+<tr>
+<th>
+<form method="get" action="market.exe">
+<label><h1>the Required quantity : </h1><input type="text" name="quantity" id="x4" maxlength="6" placeholder="Inter the Required quantity " size="20" style="font-size:20pt"/></label>
+</form>
+</th>
+</tr>
+<tr>
+<th>
+<button onclick="sum4()"><h1>Total Price </h1></button>
+<h2><p id="y4"></p></h2>
+</th>
+</tr>
+
+</table>
+
+
+<table border="0" style="position:absolute;top:850px;right:450px">
+
+
+<tr>
+<th><img src="red-baseball-jacket.JPG" height="220pt" width="50%"/></th>
+</tr>
+
+
+<tr>
+<th><h2>Men's Casual "LA California"<br/> Print Jacket - Stand Collar <br/>with Buttons, Stretch Fabric<br/>, Geometric Pattern,<br/> Regular Fit for<br/> Outerwear and Casual, <br/>Durable Sportswear</h2></th></tr>
+<tr><th><h1>The price of the piece is 4$<br/> Buy two and get the third one free</h1></th>
+</tr>
+
+
+<tr>
+<th>
+<form method="get" action="market.exe">
+<label><h1>the Required quantity : </h1><input type="text" name="quantity" id="x5" maxlength="6" placeholder="Inter the Required quantity " size="20" style="font-size:20pt"/></label>
+</form>
+</th>
+</tr>
+<tr>
+<th>
+<button onclick="sum5()"><h1>Total Price </h1></button>
+<h2><p id="y5"></p></h2>
+</th>
+</tr>
+
+</table>
+
+
+
+<table border="0" style="position:absolute;top:850px;right:0px">
+
+
+<tr>
+<th ><img src="green-casual-jacket.JPG" height="220pt" width="50%"/></th>
+</tr>
+
+
+
+<tr>
+<th><h2>Men's Green Denim Jacket<br/> - Soft Membrane, Buttons <br/>with Flap Pockets,<br/> Regular Fit, Non<br/>-Stretch Fabric, Casual Style<br/> for Casual Wear, <br/> Non-Stretch Fabric</h2></th>
+</tr>
+<tr>
+<th><h1>The price of the piece is $6,<br/>including a 3% tax</h1></th>
+</tr>
+
+
+
+
+<tr>
+<th>
+<form method="get" action="market.exe">
+<label><h1>the Required quantity : </h1><input type="text" name="quantity" id="x6" maxlength="6" placeholder="Inter the Required quantity " size="20" style="font-size:20pt"/></label>
+</form>
+</th>
+</tr>
+<tr>
+<th>
+<button onclick="sum6()"><h1>Total Price </h1></button>
+<h2><p id="y6"></p></h2>
+</th>
+</tr>
+</table>
+
+
+</body>
+</html>
+
+
+
+
